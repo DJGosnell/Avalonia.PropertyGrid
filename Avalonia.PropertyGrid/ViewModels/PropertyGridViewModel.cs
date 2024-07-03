@@ -366,6 +366,7 @@ namespace Avalonia.PropertyGrid.ViewModels
 
             if(_Context == null)
             {
+                PropertyDescriptorChanged?.Invoke(this, EventArgs.Empty);
                 return;
             }
 
